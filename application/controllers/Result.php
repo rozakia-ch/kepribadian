@@ -1,8 +1,9 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dashboard extends MY_Controller
+class Result extends MY_Controller
 {
+
   /**
    * Index Page for this controller.
    *
@@ -21,7 +22,7 @@ class Dashboard extends MY_Controller
   public function index()
   {
     $data['user'] = $this->AuthModel->current_user();
-    $data['content'] = 'dashboard';
+    $data['content'] = 'result';
     $this->load->view('layouts/layout', $data);
   }
 }
