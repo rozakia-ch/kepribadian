@@ -21,6 +21,7 @@ class Dashboard extends MY_Controller
   public function index()
   {
     $data['user'] = $this->AuthModel->current_user();
+    $data['title'] = 'Dashboard';
     $data['content'] = 'dashboard';
     $this->load->view('layouts/layout', $data);
   }
