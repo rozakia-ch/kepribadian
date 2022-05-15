@@ -18,7 +18,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="<?= base_url() ?>assets/dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?= base_url() ?>assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <?php if (isset($head)) $this->load->view('contents/' . $head) ?>
+  <?php if (isset($head)) $this->load->view($head) ?>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

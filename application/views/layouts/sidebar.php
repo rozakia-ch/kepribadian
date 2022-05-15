@@ -30,7 +30,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="<?= base_url() ?>Student" class="nav-link <?= $content == 'students/student' ? 'active' : '' ?>">
+          <a href="<?= base_url() ?>Student" class="nav-link <?= $title == 'Data Siswa' ? 'active' : '' ?>">
             <i class="nav-icon fas fa-users"></i>
             <p>
               Data Siswa
